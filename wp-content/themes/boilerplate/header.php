@@ -47,7 +47,7 @@
 	<body <?php body_class(); ?>>
 		<header>
             <div class="wrap">
-	            <img src = "<?php echo get_stylesheet_directory_uri() ?>/img/logo.png">
+	            <a href='<?php bloginfo('wpurl'); ?>'><img src = "<?php echo get_stylesheet_directory_uri() ?>/img/logo.png"></a>
 				<a id="skip" class="hidden" href="#content" title="<?php esc_attr_e( 'Skip to content', 'boilerplate' ); ?>"><?php _e( 'Skip to content', 'boilerplate' ); ?></a>
 	                <ul>
 	                    <li><a class="Pinterest" href = "//www.pinterest.com">Pinterest</a></li>
