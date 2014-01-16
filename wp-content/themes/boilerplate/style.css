@@ -763,11 +763,13 @@ nav li {
 
 }
 
+#content, footer{
+    padding:8px;
+}
 
 footer {
     background-color: #9AD6C4;
     color: #FFF;
-    padding: 8px;
 }
 
 footer a {
@@ -1069,7 +1071,7 @@ input:focus, textarea:focus{
 }
 @media screen and (min-width: 475px) {
   
-    div.wrap, article, #respond h3, #respond form, footer div {
+    .Mission, div.wrap, .front-widgets, article, #respond h3, #respond form, footer div {
         max-width: 960px;
         margin: auto;
     }
@@ -1111,6 +1113,10 @@ input:focus, textarea:focus{
         clear: none;
     }
 
+    header img {
+        padding-top: 20px;
+    }
+
     header nav {
         height: 90px;
         text-align: right;
@@ -1123,6 +1129,15 @@ input:focus, textarea:focus{
     }
     header nav a:hover {
         background: url(img/divider.png?a) repeat-x top center;
+    }
+
+    .front-widgets article, footer div div {
+        width:30%;
+        padding-left: 5%;
+        float:left;
+    }
+    .front-widgets article:first-child, footer div div:first-child{
+        padding-left:0;
     }
 
     article img.alignright {
