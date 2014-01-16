@@ -654,6 +654,10 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+header, section, footer, .copyright {
+    padding: 10px;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
     font-style: italic;
@@ -763,17 +767,19 @@ nav li {
 
 }
 
-#content, footer{
-    padding:8px;
-}
-
 footer {
     background-color: #9AD6C4;
     color: #FFF;
+    margin-top: 75px;
+    padding-top: 50px;
+    padding-bottom: 75px;
 }
 
 footer a {
     color: #168F7F;
+}
+footer p {
+    line-height: 25px
 }
 
 footer h4 {
@@ -788,7 +794,7 @@ footer h4 {
     font-size: 12px;
     font-weight: 600;
     color: #FFF;
-    padding: 8px;
+    padding: 2em 0 10em;
     text-align: center;
 }
 
@@ -1066,9 +1072,6 @@ input:focus, textarea:focus{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
 @media screen and (min-width: 475px) {
   
     .Mission, div.wrap, .front-widgets, article, #respond h3, #respond form, footer div {
@@ -1133,7 +1136,8 @@ input:focus, textarea:focus{
 
     .front-widgets article, footer div div {
         width:30%;
-        padding-left: 5%;
+        max-width: 260px;
+        padding-left: 80px;
         float:left;
     }
     .front-widgets article:first-child, footer div div:first-child{
