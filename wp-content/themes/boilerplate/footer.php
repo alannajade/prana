@@ -36,8 +36,8 @@
 		</footer>
 	<?php if(is_front_page()): ?>
 		<div class= "Contact-Us">
-            <div class="clearfix" style="background-color:rgba(0,0,0,0.75); height:450px; width:100%; margin:auto;">
-              <p style="color:white; filter:alpha(opacity=100); opacity:1;">
+            <div class="clearfix">
+              <p>
                 <h5>CONNECT WITH US</h5>
                 <h6>join our mailing list</h6>
                 <p>Get the latest news, events &amp; wellness tips from Prana</p>
