@@ -40,7 +40,7 @@
               <p>
                 <h5>CONNECT WITH US</h5>
                 <h6>join our mailing list</h6>
-                <p>Get the latest news, events &amp; wellness tips from Prana</p>
+                <p class="mailchimp">Get the latest news, events &amp; wellness tips from Prana</p>
                 <!-- Begin MailChimp Signup Form -->
                 <div id="mc_embed_signup">
                 <form action="http://pranayogawellness.us7.list-manage.com/subscribe/post?u=0bb80f83f32a3a2a9c66d6cef&amp;id=928f017071" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
