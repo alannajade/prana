@@ -16,7 +16,7 @@ get_header();
 
 if(is_front_page()){ ?>
 	<div class= "Mission">
-        <p>"Our mission is to help people better manage the stress in their lives" -- Chantelle Diachina, <span>founder of Prana</span></p>
+        <p>"Our mission is to help people better manage the stress in their lives" <br>	- Chantelle Diachina, <span>founder of prana</span></p>
     </div>
     <hr>  
     <div class= "front-widgets clearfix">

@@ -675,7 +675,13 @@ a {
     text-decoration: none;
 }
 
-
+hr {
+    background: url(img/divider.PNG) repeat-x top left;
+    border: none;
+    height: 3px;
+    width: 37px;
+    margin: auto;
+}
 a:hover, a:focus, a:active {
     color: #10B29C;
 }
@@ -987,6 +993,21 @@ input:focus, textarea:focus{
     background: url(img/Pinterest2.png) no-repeat;
 }
 
+.Mission {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+}
+.Mission span {
+    font-weight: normal;
+    text-transform: none;
+    font-style: italic;
+    font-size: 11px;
+}
 
 
 /* ==========================================================================
