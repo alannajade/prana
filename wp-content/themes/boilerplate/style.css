@@ -810,6 +810,10 @@ footer h4 {
 }
 
 
+.first-footer-widgets, .front-widgets {
+    text-align: center;
+}
+
 .first-footer-widgets {
     padding: 30px 8px 0;
     margin-bottom: 10px;
@@ -827,6 +831,7 @@ footer h4 {
 }
 
 .first-footer-widgets li {
+    text-align: left;
     padding-bottom: 20px;
 }
 
