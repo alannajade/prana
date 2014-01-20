@@ -14,25 +14,16 @@
 
 		<footer class="clearfix">
 			<div>
-		<?php
-			/* A sidebar in the footer? Yep. You can can customize
-			 * your footer with four columns of widgets.
-			 */
-			//get_sidebar( 'footer' );
-		?>
-		    <div class="Facebook-Blurb">
-		        <h4>Prana on Facebook</h4>
-		            <p>Adho mukha vrksasana pose ardha chandrasana eka pada rajakapotasana ii marichyasana iii uddiyana bandha upavistha konasana utthita parsvakonasana virabhadrasana iii eagle pose ear pressure pose cat pose root bond king dancer pose, lord of the dance pose ii yoga boat pose marichi's pose iii, seated twist compass pose easy pose reclining hero pose extended triangle pose.</p>
-		    </div>
-		    <div class="Blog-Post">    
-		        <h4>Latest Blog Post</h4>
-		            <p>Adho mukha vrksasana pose ardha chandrasana eka pada rajakapotasana ii marichyasana iii uddiyana bandha upavistha konasana utthita parsvakonasana virabhadrasana iii eagle pose ear pressure pose cat pose root bond king dancer pose, lord of the dance pose ii yoga boat pose marichi's pose iii, seated twist compass pose easy pose reclining hero pose extended triangle pose.</p>
-		    </div>    
-		    <div class="Twitter-Blurb">
-		        <h4>@pranalondon on Twitter</h4>
-		            <p>Adho mukha vrksasana pose ardha chandrasana eka pada rajakapotasana ii marichyasana iii uddiyana bandha upavistha konasana utthita parsvakonasana virabhadrasana iii eagle pose ear pressure pose cat pose root bond king dancer pose, lord of the dance <a href = "">pose ii</a> yoga boat pose marichi's pose iii, seated twist compass pose easy pose reclining hero pose extended triangle pose.</p>
-		    </div>
-			</div>
+			<p class="more-info">More Info</p>
+			<ul class="first-footer-widgets">
+				<?php
+					/* A sidebar in the footer? Yep. You can can customize
+					 * your footer with four columns of widgets.
+					 */
+					//get_sidebar( 'footer' );
+				?>
+				<?php dynamic_sidebar( 'first-footer-widget-area' ) ?>
+			</ul>
 		</footer>
 	<?php if(is_front_page()): ?>
 		<div class= "Contact-Us">
