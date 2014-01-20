@@ -778,7 +778,7 @@ footer {
     color: #FFF;
     margin-top: 75px;
     padding-top: 50px;
-    padding-bottom: 75px;
+    padding-bottom: 0px;
 }
 
 footer a {
@@ -800,13 +800,49 @@ footer h4 {
     font-size: 12px;
     font-weight: 600;
     color: #FFF;
-    padding: 2em 0 10em;
+    padding: 2em 0 2em;
     text-align: center;
 }
 
 .copyright a {
     color: #9AD6C4;
     font-style: normal;
+}
+
+
+.first-footer-widgets {
+    padding: 30px 8px 0;
+    margin-bottom: 10px;
+}
+
+.front-widgets ul {
+    padding: 0 8px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.front-widgets li, .first-footer-widgets li{
+    display: inline-block;
+}
+
+.first-footer-widgets li {
+    padding-bottom: 20px;
+}
+
+.front-widgets h3 {
+    font-size: 24px;
+    margin-top: 25px;
+}
+.first-footer-widgets h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+footer .more-info {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 .Contact-Us {
@@ -994,8 +1030,8 @@ input:focus, textarea:focus{
 }
 
 .Mission {
-    padding-top: 25px;
-    padding-bottom: 70px;
+    padding-top: 0;
+    padding-bottom: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 12px;
@@ -1008,6 +1044,8 @@ input:focus, textarea:focus{
     font-style: italic;
     font-size: 11px;
 }
+
+
 
 
 /* ==========================================================================
@@ -1118,10 +1156,19 @@ input:focus, textarea:focus{
    ========================================================================== */
 
 @media screen and (min-width: 475px) {
-  
+
+    footer{
+        padding-bottom: 75px;
+    }
+
     .Mission, div.wrap, .front-widgets, article, #respond h3, #respond form, footer div {
         max-width: 960px;
         margin: auto;
+    }
+
+    .Mission {
+        padding-top: 25px;
+        padding-bottom: 70px;
     }
 
     .wrap img {
@@ -1179,42 +1226,23 @@ input:focus, textarea:focus{
         background: url(img/divider.png?a) repeat-x top center;
     }
 
-    footer .more-info {
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 12px;
-    }
-
     .front-widgets li, .first-footer-widgets li{
-        display: inline-block;
         width:30%;
         padding-left: 5%;
         vertical-align: top;
     }
+
+    .first-footer-widgets li{
+        padding-bottom: 0;  
+    }
+
     .front-widgets li:first-child, .first-footer-widgets li:first-child{
         padding-left:0;
     }
 
-    .first-footer-widgets {
-        padding: 30px 8px 0;
-        margin-bottom: 10px;
-    }
-
-    .front-widgets ul {
-        padding: 0 8px;
-        text-align: center;
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-
     .front-widgets h3 {
-        font-size: 24px;
         margin-top: 75px;
-    }
-    .first-footer-widgets h3 {
-        color: #fff;
-        font-size: 18px;
-    }
+    }   
 
     article img.alignright {
         margin-left: 80px;
