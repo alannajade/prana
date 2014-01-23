@@ -711,8 +711,9 @@ article img {
 #entry-author-info h3{
     clear: none;
 }
+
 .children{
-    border-left: 5px solid #E5F3F4;
+    padding-left: 0; 
 }
 img.avatar{
     width: 120px;
@@ -1238,6 +1239,15 @@ input:focus, textarea:focus{
         float: right;
         margin-right: 0;
     }
+
+    .children{
+        padding-left: 40px;
+        border-left: 5px solid #E5F3F4;
+    }
+    .children .children .children .children .children {
+        margin-left: 0;
+    }
+
 }
 
 @media screen and (min-width: 760px) {
@@ -1330,6 +1340,10 @@ input:focus, textarea:focus{
   #mc-embedded-subscribe-form {
     margin-top: 1em;
     margin-bottom: 2.5em;
+  }
+
+  .children{
+        border-left: 5px solid #E5F3F4;
   }
 }
 @media screen and (min-width: 930px) {
