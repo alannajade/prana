@@ -718,11 +718,6 @@ header {
     margin-bottom: 45px;
 }
 
-.home header {
-    background: url(img/ocean-small.jpg) right bottom;
-    height: 400px;
-}
-
 header img {
     float: left;
     padding: 8px;
@@ -777,8 +772,8 @@ nav li {
 footer {
     background-color: #9AD6C4;
     color: #FFF;
-    margin-top: 75px;
-    padding-top: 50px;
+    margin-top: 20px;
+    padding-top: 0;
     padding-bottom: 0px;
 }
 
@@ -817,7 +812,7 @@ footer h4 {
 
 .first-footer-widgets {
     padding: 30px 8px 0;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
 }
 
 .front-widgets ul {
@@ -828,7 +823,7 @@ footer h4 {
 }
 
 .front-widgets li, .first-footer-widgets li{
-    display: inline-block;
+    display: block;
 }
 
 .first-footer-widgets li {
@@ -846,9 +841,7 @@ footer h4 {
 }
 
 footer .more-info {
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 12px;
+    display: none;
 }
 
 .Contact-Us {
@@ -1020,19 +1013,19 @@ input:focus, textarea:focus{
 }
 
 .LinkedIn2 {
-    background: url(img/LinkedIn2.png) no-repeat;
+    background: url(img/linkedin2.png) no-repeat;
 }
 
 .Facebook2 {
-    background: url(img/Facebook2.png) no-repeat;
+    background: url(img/facebook2.png) no-repeat;
 }
 
 .Twitter2 {
-    background: url(img/Twitter2.png) no-repeat;
+    background: url(img/twitter2.png) no-repeat;
 }
 
 .Pinterest2 {
-    background: url(img/Pinterest2.png) no-repeat;
+    background: url(img/pinterest2.png) no-repeat;
 }
 
 .Mission {
@@ -1165,10 +1158,7 @@ input:focus, textarea:focus{
 
     .home header {
         background: url(img/ocean-med.jpg) right bottom;
-    }
-
-    footer{
-        padding-bottom: 75px;
+        height: 475px;
     }
 
     .Mission, div.wrap, .front-widgets, article, #respond h3, #respond form, footer div {
@@ -1208,13 +1198,6 @@ input:focus, textarea:focus{
     }
 }
 
-@media screen and (min-width: 890px) {
-    .home header {
-        background: url(img/ocean.jpg) center top;
-        background-size:auto 100%;
-        height: 508px;
-    }
-}
 @media screen and (min-width: 760px) {
   
     header ul {
@@ -1242,8 +1225,20 @@ input:focus, textarea:focus{
     header nav a:hover {
         background: url(img/divider.png?a) repeat-x top center;
     }
+    footer{
+        margin-top: 75px;
+        padding-top: 65px;
+        padding-bottom: 75px;
+    }
+    footer .more-info {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 12px;
+    }
 
     .front-widgets li, .first-footer-widgets li{
+        display: inline-block;
         width:30%;
         padding-left: 5%;
         vertical-align: top;
@@ -1288,19 +1283,30 @@ input:focus, textarea:focus{
   }
   p.mailchimp {
     margin-top:1em;
-    padding: 0 172px;
+    /*padding: 0 172px;*/
   }
   #mc-embedded-subscribe-form {
     margin-top: 1em;
     margin-bottom: 2.5em;
   }
 }
-
 @media screen and (min-width: 930px) {
     header nav a {
         padding: 21px 0;
         margin: 0 16px;
         font-size: 11px;
+    }
+}
+@media screen and (min-width: 890px) {
+    .home header {
+        background: url(img/ocean.jpg) right top;
+        background-size:auto 100%;
+        height: 508px;
+    }
+}
+@media screen and (min-width: 960px) {
+    .home header {
+        background-position: center top;
     }
 }
 

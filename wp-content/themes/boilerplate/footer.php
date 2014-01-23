@@ -48,10 +48,11 @@
                 <!--End mc_embed_signup-->
                 <nav class= "footer">
                     <ul>
-                        <li><a class="Pinterest2" href = "//www.pinterest.com">Pinterest</a></li>
-                        <li><a class="Facebook2" href = "//www.facebook.com">Facebook</a></li>
+                        <li><a class="Pinterest2" href = "//www.pinterest.com/pranalondon/boards/">Pinterest</a></li>
+                        <li><a class="Facebook2" href = "//www.facebook.com/pranayogawellness">Facebook</a></li>
                         <li><a class="Twitter2" href = "//twitter.com/PranaLondon">Twitter</a></li>
-                        <li><a class="LinkedIn2" href = "//www.linkedin.com">LinkedIn</a></li>
+                        <li><a class="LinkedIn2" href = "//www.linkedin.com/company/prana-yoga-%26-wellness/">LinkedIn</a></li>
+                    </ul>
                     </ul>
                 </nav>
               </p>

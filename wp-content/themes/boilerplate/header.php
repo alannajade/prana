@@ -50,10 +50,10 @@
 	            <a href='<?php bloginfo('wpurl'); ?>'><img src = "<?php echo get_stylesheet_directory_uri() ?>/img/logo.png"></a>
 				<a id="skip" class="hidden" href="#content" title="<?php esc_attr_e( 'Skip to content', 'boilerplate' ); ?>"><?php _e( 'Skip to content', 'boilerplate' ); ?></a>
 	                <ul>
-	                    <li><a class="Pinterest" href = "//www.pinterest.com">Pinterest</a></li>
-	                    <li><a class="Facebook" href = "//www.facebook.com">Facebook</a></li>
+	                    <li><a class="Pinterest" href = "//www.pinterest.com/pranalondon/boards/">Pinterest</a></li>
+	                    <li><a class="Facebook" href = "//www.facebook.com/pranayogawellness">Facebook</a></li>
 	                    <li><a class="Twitter" href = "//twitter.com/PranaLondon">Twitter</a></li>
-	                    <li><a class="LinkedIn" href = "//www.linkedin.com">LinkedIn</a></li>
+	                    <li><a class="LinkedIn" href = "//www.linkedin.com/company/prana-yoga-%26-wellness/">LinkedIn</a></li>
 	                </ul>
 				<nav role="navigation">
 				  <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff */ ?>
