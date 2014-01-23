@@ -593,6 +593,7 @@ body {
 
 hr {
     display: block;
+    clear: both;
     height: 1px;
     border: 0;
     border-top: 1px solid #ccc;
@@ -710,6 +711,9 @@ article img {
 #entry-author-info h3{
     clear: none;
 }
+.children{
+    border-left: 5px solid #E5F3F4;
+}
 img.avatar{
     width: 120px;
     margin-right: 1em;
@@ -718,6 +722,9 @@ img.avatar{
 }
 .comment-author img.avatar{
     width: 60px;
+    padding: 0;
+    box-shadow: none;
+    border: none;
 }
 .author-desc {
     white-space: pre-line;
