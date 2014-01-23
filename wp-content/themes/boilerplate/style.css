@@ -703,6 +703,32 @@ article img {
     clear: both;
 }
 
+#entry-author-info{
+    margin-bottom: 2em;
+}
+
+#entry-author-info h3{
+    clear: none;
+}
+img.avatar{
+    width: 120px;
+    margin-right: 1em;
+    margin-left: 0;
+    float: left; 
+}
+.comment-author img.avatar{
+    width: 60px;
+}
+.author-desc {
+    white-space: pre-line;
+}
+.author-link {
+    display: block;
+    margin-top: 1em;
+}
+
+
+
 #nav-above a[rel=next] {
     float: right;
 }
@@ -887,6 +913,15 @@ p.mailchimp {
     display: inline-block;
     border: 2px solid #9BD6C4;
     border-radius: 2px;
+}
+
+#comments > ol {
+    padding-left: 0;
+}
+
+#comments li {
+    display: block;
+    margin-top: 2em;
 }
 
 #respond {
@@ -1161,7 +1196,7 @@ input:focus, textarea:focus{
         height: 475px;
     }
 
-    .Mission, div.wrap, .front-widgets, article, #respond h3, #respond form, footer div {
+    .Mission, div.wrap, .front-widgets, article, #comments, #respond h3, #respond form, footer div {
         max-width: 960px;
         margin: auto;
     }

@@ -1,4 +1,3 @@
-<?php print_r(is_home()); exit; ?>
 <?php
 /**
  * The main template file.

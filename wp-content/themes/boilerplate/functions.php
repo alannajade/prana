@@ -350,12 +350,12 @@ if ( ! function_exists( 'boilerplate_comment' ) ) :
 					<em><?php _e( 'Your comment is awaiting moderation.', 'boilerplate' ); ?></em>
 					<br />
 				<?php endif; ?>
-				<footer class="comment-meta commentmetadata"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
+				<div class="comment-meta commentmetadata"><a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
 					<?php
 						/* translators: 1: date, 2: time */
 						printf( __( '%1$s at %2$s', 'boilerplate' ), get_comment_date(),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)', 'boilerplate' ), ' ' );
 					?>
-				</footer><!-- .comment-meta .commentmetadata -->
+				</div><!-- .comment-meta .commentmetadata -->
 				<div class="comment-body"><?php comment_text(); ?></div>
 				<div class="reply">
 					<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>

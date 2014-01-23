@@ -24,14 +24,15 @@ get_header(); ?>
 						<?php wp_link_pages( array( 'before' => '' . __( 'Pages:', 'boilerplate' ), 'after' => '' ) ); ?>
 					</div><!-- .entry-content -->
 <?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
-					<footer id="entry-author-info">
-						<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'boilerplate_author_bio_avatar_size', 60 ) ); ?>
-						<h2><?php printf( esc_attr__( 'About %s', 'boilerplate' ), get_the_author() ); ?></h2>
-						<?php the_author_meta( 'description' ); ?>
-						<a href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
+					<br><hr><br>
+					<div id="entry-author-info">
+						<?php echo get_avatar( get_the_author_meta( 'user_email' ), apply_filters( 'boilerplate_author_bio_avatar_size', 120 ) ); ?>
+						<h3><?php printf( esc_attr__( 'About %s', 'boilerplate' ), get_the_author() ); ?></h3>
+						<div class="author-desc"><?php the_author_meta( 'description' ); ?></div>
+						<a class="author-link" href="<?php echo get_author_posts_url( get_the_author_meta( 'ID' ) ); ?>">
 							<?php printf( __( 'View all posts by %s &rarr;', 'boilerplate' ), get_the_author() ); ?>
 						</a>
-					</footer><!-- #entry-author-info -->
+					</div><!-- #entry-author-info -->
 <?php endif; ?>	
 				</article><!-- #post-## -->
 				<nav id="nav-below" class="navigation">
