@@ -878,6 +878,25 @@ footer h4 {
     font-size: 18px;
 }
 
+.rpwe-ul, .rpwe-ul li, h3.rpwe-title, .rpwe-summary, .front-widgets li li, .front-widgets ul ul, .first-footer-widgets li li, .first-footer-widgets ul {
+    display: inline;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.front-widgets .rpwe-ul,
+.first-footer-widgets .rpwe-ul {
+    display: block;
+}
+h3.rpwe-title {
+    font-size: 14px;
+}
+
+.rpwe-title:after {
+    content: "-";
+    color: #7F7E7E;
+}
+
 footer .more-info {
     display: none;
 }
@@ -940,6 +959,7 @@ p.mailchimp {
     padding: 8px;
     background-color: #E5F3F4;
     color: #666;
+    border-radius: 15px;
 }
 
 #respond h3 {
@@ -975,7 +995,7 @@ input:focus, textarea:focus{
     box-shadow: 0px 0px 10px #999;    
 }
 
-#mc-embedded-subscribe, .wpcf7 input[type=submit], #searchform input[type=submit] {
+#mc-embedded-subscribe, input[type=submit] {
     height: 24px;
     width: 90px;
     color: #FFF;
@@ -988,7 +1008,7 @@ input:focus, textarea:focus{
     letter-spacing: 0.1em;
 }
 
-.wpcf7 input[type=submit], #searchform input[type=submit]{
+.wpcf7 input[type=submit], #searchform input[type=submit], #respond input[type=submit]{
     width:auto;
     height: auto;
 }

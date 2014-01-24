@@ -270,7 +270,7 @@ if ( ! function_exists( 'boilerplate_continue_reading_link' ) ) :
 	 * @return string "Continue Reading" link
 	 */
 	function boilerplate_continue_reading_link() {
-		return ' <a href="'. get_permalink() . '">' . __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'boilerplate' ) . '</a>';
+		return ' <a href="'. get_permalink() . '">' . __( 'Continue&nbsp;reading&nbsp;<span class="meta-nav">&rarr;</span>', 'boilerplate' ) . '</a>';
 	}
 endif;
 
