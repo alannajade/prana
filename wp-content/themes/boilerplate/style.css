@@ -689,6 +689,10 @@ a:hover, a:focus, a:active {
 
 article, #content nav {
     margin: 8px;
+    padding: 1em 0;
+}
+#content nav a {
+    color: #888;
 }
 
 article img.alignleft, 
@@ -735,13 +739,10 @@ img.avatar{
     margin-top: 1em;
 }
 
-
-
-#nav-above a[rel=next] {
-    float: right;
+nav .nav-previous {
+    float: left;
 }
-
-#nav-below a[rel=next] {
+nav .nav-next {
     float: right;
 }
 
@@ -934,16 +935,16 @@ p.mailchimp {
 
 #respond {
     padding: 8px;
-    background-color: #9BD6C4;
-    color: white;
+    background-color: #E5F3F4;
+    color: #666;
 }
 
 #respond h3 {
-    color: white;
+    color: #666;
 }
 
 form {
-    background-color: #9BD6C4;
+    background-color: #E5F3F4;
 }
 
 .wpcf7 form, #searchform {
@@ -962,7 +963,7 @@ input, textarea {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
-    border: 2px solid #9BD6C4;
+    border: 2px solid #E5F3F4;
 }
 
 input:focus, textarea:focus{
@@ -1204,11 +1205,14 @@ input:focus, textarea:focus{
         height: 475px;
     }
 
-    .Mission, div.wrap, .front-widgets, article, #comments, #respond h3, #respond form, footer div {
+    .Mission, div.wrap, .front-widgets, #content nav, article, #comments, #respond, footer div {
         max-width: 960px;
         margin: auto;
     }
 
+    #respond h3, #respond form {
+        margin: 2em;
+    }
     .Mission {
         padding-top: 25px;
         padding-bottom: 70px;

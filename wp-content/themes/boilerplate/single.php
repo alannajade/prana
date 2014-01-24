@@ -10,9 +10,9 @@
 get_header(); ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-				<nav id="nav-above" class="navigation">
-					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . ' %title' ); ?>
-					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?>
+				<nav id="nav-above" class="navigation clearfix">
+					<div class="nav-previous"><?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . ' %title' ); ?></div>
+					<div class="nav-next"><?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?></div>
 				</nav><!-- #nav-above -->
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 					<h1><?php the_title(); ?></h1>
@@ -35,9 +35,9 @@ get_header(); ?>
 					</div><!-- #entry-author-info -->
 <?php endif; ?>	
 				</article><!-- #post-## -->
-				<nav id="nav-below" class="navigation">
-					<?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . ' %title' ); ?>
-					<?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?>
+				<nav id="nav-below" class="navigation clearfix">
+					<div class="nav-previous"><?php previous_post_link( '%link', '' . _x( '&larr;', 'Previous post link', 'boilerplate' ) . ' %title' ); ?></div>
+					<div class="nav-next"><?php next_post_link( '%link', '%title ' . _x( '&rarr;', 'Next post link', 'boilerplate' ) . '' ); ?></div>
 				</nav><!-- #nav-below -->
 				<?php comments_template( '', true ); ?>
 <?php endwhile; // end of the loop. ?>
