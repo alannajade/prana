@@ -818,7 +818,7 @@ footer {
 footer a {
     color: #168F7F;
 }
-footer p {
+footer p, footer .rpwe-summary {
     line-height: 25px
 }
 
@@ -873,7 +873,8 @@ footer h4 {
     font-size: 24px;
     margin-top: 25px;
 }
-.first-footer-widgets h3 {
+.first-footer-widgets h3,
+.first-footer-widgets h3.widget-title a{
     color: #fff;
     font-size: 18px;
 }
@@ -895,6 +896,27 @@ h3.rpwe-title {
 .rpwe-title:after {
     content: "-";
     color: #7F7E7E;
+}
+
+footer .tp_recent_tweets li {
+    background: none;
+    margin-bottom: 1.5em;
+}
+
+footer .tp_recent_tweets .twitter_time {
+    color: #fff;
+}
+
+.rfbp-text p {
+    margin-bottom: 0;
+}
+
+.rfbp-post-link-wrap {
+    margin-top: 0;
+}
+
+footer .tp_recent_tweets .twitter_time{
+
 }
 
 footer .more-info {
@@ -943,7 +965,12 @@ p.mailchimp {
 #mc-embedded-subscribe-form {
     display: inline-block;
     border: 2px solid #9BD6C4;
+    background: #9BD6C4;
     border-radius: 2px;
+}
+
+.mc-field-group input {
+    border: 2px solid #9BD6C4;    
 }
 
 #comments > ol {
