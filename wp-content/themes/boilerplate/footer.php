@@ -59,7 +59,7 @@
             </div>
         </div>
         <?php endif; ?>
-		   <div class="copyright">Copyright &copy; <?php date('Y'); ?> <a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> Yoga Wellness <a href ="">Privacy Policy</a></div>
+		   <div class="copyright">Copyright &copy; <?php date('Y'); ?> <a href="<?php echo home_url( '/' ) ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a> Yoga Wellness. All rights reserved. <a href ="<?php echo get_permalink(2); ?> "></div>
 <?php
 	/* Always have wp_footer() just before the closing </body>
 	 * tag of your theme, or you will break many plugins, which
