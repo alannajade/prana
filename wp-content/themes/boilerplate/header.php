@@ -8,6 +8,19 @@
  * @subpackage Boilerplate
  * @since Boilerplate 1.0
  */
+
+	// Random header image
+	//List of images
+	$bg = array(
+		'ocean', 
+		'be-happy', 
+		'tagline'
+	);
+
+	$i = rand(0, count($bg)-1); // generate random number size of the array
+	$selectedBg = "$bg[$i]"; // set variable equal to which random filename was chosen
+
+
 ?><!DOCTYPE html>
 <!--[if lt IE 7 ]><html class="no-js ie ie6 lte7 lte8 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
 <!--[if IE 7 ]><html class="no-js ie ie7 lte7 lte8 lte9" dir="<?php bloginfo('text_direction'); ?>" <?php language_attributes(); ?>><![endif]-->
@@ -43,6 +56,23 @@
 		 */
 		wp_head();
 ?>
+		<!-- Random header image -->
+		<style type="text/css">
+			<!--
+			@media screen and (min-width: 475px) {
+				.home header {
+					background: url(<?php echo get_stylesheet_directory_uri() ?>/img/slide-<?php echo $selectedBg ?>-med.jpg) right bottom;
+				}
+			}
+			@media screen and (min-width: 890px) {
+				.home header {
+					background: url(<?php echo get_stylesheet_directory_uri() ?>/img/slide-<?php echo $selectedBg ?>.jpg) center top;
+				}
+			}
+			-->
+		</style>
+
+
 	</head>
 	<body <?php body_class(); ?>>
 		<header>
